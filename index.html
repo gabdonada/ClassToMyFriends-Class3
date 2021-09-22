@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3</title>
+</head>
+
+<body>
+    
+    <h2>My first JS</h2>
+
+    <button type="button" onclick="exibirDataEHora()">Exibir Data e Hora</button>
+
+    <p id="dataEHora"></p>
+
+    <hr>
+
+    <form action="">
+        <label for="">Digite Nome:</label>
+        <input type="text" id="nome" required>
+        <br>
+        <label for="">Digite Idade:</label>
+        <input type="number" id="idade" required>
+        <br>
+        <label for="">Selecione seu voto:</label>
+        <select name="voto" id="candidato" required>
+            <option value="">Selecione</option>
+            <option value="cand1">Candidato 1</option>
+            <option value="cand2">Candidato 2</option>
+            <option value="cand3">Candidato 3</option>
+        </select>
+        <br>
+        <button type="button" onclick="contabilizarVoto()">Votar</button>
+    </form>
+    <br>
+    <button type="button" onclick="validarVotos()">Validar</button>
+    <br>
+    <button type="button" onclick="qtdVotos()">Exibir quantidade de votos</button>
+    <br>
+    <button type="button" onclick="finalizarVotacao()">Finalizar Votação</button>
+
+</body>
+<script src="./script.js"></script>
+</html>
